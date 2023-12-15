@@ -1,0 +1,47 @@
+#app {
+  background-color: #ddd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  /* Note, grid template columns is defined in the JS as a style */
+  grid-gap: 1px;
+
+  overflow: auto;
+}
+
+.grid > .header,
+.grid > .cell {
+  padding: 0.25rem;
+}
+
+.grid > .header {
+  background-color: #eee;
+}
+
+.grid > .cell {
+  background-color: #fff;
+}
+
+.footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.refresh-button {
+  background-color: rgb(0, 9, 139);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.refresh-button:focus,
+.refresh-button:hover {
+  background-color: rgb(11, 22, 173);
+}
