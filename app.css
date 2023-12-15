@@ -25,6 +25,9 @@
 .grid > .cell {
   background-color: #fff;
 }
+.grid > input.cell {
+  border-radius: 0;
+}
 
 .footer {
   padding: 1rem;
